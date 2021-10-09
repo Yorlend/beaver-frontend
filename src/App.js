@@ -1,6 +1,8 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import HomePage from "./Pages/HomePage";
+import Marketplace from "./Pages/Marketplace";
+import Cabinet from "./Pages/CabinetPage";
 
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
@@ -16,6 +18,8 @@ function App() {
                 <Header/>
                 <Switch>
                     <Route exact path="/" component={HomePage}/>
+                    <Route exact path="/market" component={Marketplace} />
+                    <Route exact path="/market" component={Cabinet} />
                 </Switch>
                 <Footer/>
             </Router>

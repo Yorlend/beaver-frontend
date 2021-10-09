@@ -10,12 +10,9 @@ class Header extends Component {
                 <nav className="mmm">
                     <div className="mmm-content">
                         <ul className="mmm-list">
-                            <li><a href="index.html">Home</a></li>
+                            <Link to="/">Home</Link>
                             <li><a href="about-us.html">About us</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="typography.html">Typography</a></li>
-                            <li><a href="tabs-and-accordions.html">Tabs &amp; Accordions</a></li>
-                            <li><a href="news.html">News</a></li>
+                            <li><a href="services.html">Data marketplace</a></li>
                             <li><a href="contact-us.html">Contact Us</a></li>
                         </ul>
                     </div>
@@ -31,65 +28,6 @@ class Header extends Component {
                 </nav> {/* End mobile main menu */}
                 {/* Begin header */}
                 <header className="header">
-                    {/* Begin header top */}
-                    <nav className="header-top">
-                        <div className="container">
-                            <div className="row align-items-center justify-content-between">
-                                <div className="col-auto">
-                                    {/* Begin header top info */}
-                                    <ul className="header-top-info">
-                                        <li>
-                                            <a href="mailto:mail@example.com">
-                                                <i className="material-icons md-18">mail_outline</i>
-                                                <span>mail@example.com</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="mailto:mail@example.com" className="formingHrefTel">
-                                                <i className="material-icons md-18">phone_in_talk</i>
-                                                <span>+1-888-777-1234</span>
-                                            </a>
-                                        </li>
-                                    </ul>{/* Ennd header top info */}
-                                </div>
-                                <div className="col-auto">
-                                    <div className="header-top-links">
-                                        {/* Begin social links */}
-                                        <ul className="social-links">
-                                            <li>
-                                                <a href="#!" title="Facebook">
-                                                    <svg viewBox="0 0 320 512">
-                                                        <use xlinkHref="assets/img/sprite.svg#facebook-icon" />
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#!" title="Instagram">
-                                                    <svg viewBox="0 0 448 512">
-                                                        <use xlinkHref="assets/img/sprite.svg#instagram-icon" />
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#!" title="LinkedIn">
-                                                    <svg viewBox="0 0 448 512">
-                                                        <use xlinkHref="assets/img/sprite.svg#linkedin-icon" />
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#!" title="Twitter">
-                                                    <svg viewBox="0 0 512 512">
-                                                        <use xlinkHref="assets/img/sprite.svg#twitter-icon" />
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                        </ul>{/* End social links */}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>{/* End header top */}
                     {/* Begin header fixed */}
                     <nav className="header-fixed">
                         <div className="container">
@@ -105,22 +43,16 @@ class Header extends Component {
                                 <div className="col-auto header-fixed-col">
                                     {/* Begin logo */}
                                     <a href="/" className="logo" title="PathSoft">
-                                        <img src="assets/img/logo.svg" alt="PathSoft" width={115} height={36} />
+                                        <img src="assets/img/VTB.svg" alt="PathSoft" width={115} height={36} />
                                     </a>{/* End logo */}
                                 </div>
                                 <div className="col-auto header-fixed-col d-none d-lg-block col-static">
                                     {/* Begin main menu */}
                                     <nav className="main-mnu">
                                         <ul className="main-mnu-list">
-                                            <li><a href="index.html" data-title="Home"><span>Home</span></a></li>
-                                            <li><a href="about-us.html" data-title="About us"><span>About us</span></a></li>
-                                            <li><a href="services.html" data-title="Services"><span>Services</span></a></li>
-                                            <li><a href="typography.html" data-title="Typography"><span>Typography</span></a></li>
-                                            <li><a href="tabs-and-accordions.html" data-title="Tabs & Accordions"><span>Tabs
-                                                &amp; Accordions</span></a></li>
-                                            <li><a href="news.html" data-title="News"><span>News</span></a></li>
-                                            <li><a href="contact-us.html" data-title="Contact Us"><span>Contact
-                                                Us</span></a></li>
+                                            <li><Link to="/" data-title="Главная"><span>Главная</span></Link></li>
+                                            <li><Link to="/market" data-title="Датамаркет"><span>Датамаркет</span></Link></li>
+                                            <li><Link to="/cabinet" data-title="Личный кабинет"><span>Личный кабинет</span></Link></li>
                                         </ul>
                                     </nav>{/* End main menu */}
                                 </div>
