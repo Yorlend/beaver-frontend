@@ -1,0 +1,62 @@
+:root {
+    --primary: #673ab7;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+#app {
+    min-height: 100vh;
+    padding-bottom: 3rem;
+}
+
+a, a.nav-link, #home h1 {
+    color: #673ab7;
+    text-decoration: none;
+}
+
+.btn.btn-primary, footer {
+    background-color: #673ab7;
+    border-color: #673ab7;
+}
+
+#home-logo {
+    margin-left: -30px;
+}
+
+#home section{
+    border-bottom: 1px solid #eee;
+}
+
+.video {
+    text-align: center;
+    background-color: rebeccapurple;
+    min-height: 100vh;
+    color: orange
+}
+
+#new-photoset-btn {
+    margin-left: auto;
+    display: block;
+    max-width: 100px;
+}
+
+@media (max-width: 575px) {
+    #new-photoset-btn {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+footer {
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
