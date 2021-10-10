@@ -1,0 +1,14 @@
+{
+    "rules":[
+        {
+            "dataset_urn" : "urn:li:dataset:(urn:li:dataPlatform:hdfs,SampleHdfsDataset,PROD)",
+            "feat_name": "shipment_info",
+            "action": ""
+        },
+        {
+            "dataset_urn" : "urn:li:dataset:(urn:li:dataPlatform:hdfs,SampleHdfsDataset,PROD)",
+            "feat_name": "shipment_info.geo_info.lng",
+            "action": "FILTER(this > 50)"
+        }
+    ]
+}
